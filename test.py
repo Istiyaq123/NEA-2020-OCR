@@ -1,3 +1,6 @@
+#import random number : 1 to 6
+import random
+
 #Initialisers
 p1Points = 0
 P2Points = 0
@@ -51,8 +54,8 @@ else:
 print("The Rules:\nEvery Player Has 5 Rolls\nIf You Roll an Even Number you get 10 points, and If You Roll a Odd Number lose 5 Points\nWhat you get is added to your score")
 
 #The Rolls
-rolls = 0
-while rolls > 5:
+roll = 0
+while roll != 5:
     number = random.randint(1,6)
     playOneRoll = input("Player 1 Roll. Yes or No").title()
     if playOneRoll == "Yes":
@@ -89,5 +92,8 @@ while rolls > 5:
             P2Points = P2Points + number
     else:
         quit()
-    rolls = rolls + 1   
+    roll = roll + 1
+
 print("Every Person has had 5 rolls")
+
+quit()
