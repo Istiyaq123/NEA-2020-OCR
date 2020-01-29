@@ -16,11 +16,12 @@ def login():
     usernameone = input('What is your name')
     usernameonepassword = input('What is your password')
     Ua = (usernameone + '\t' + usernameonepassword)
-    for line in users:
-        if line == Ua:
-            print('Why')
-        else:
-            print('okay')
+    line = users.readline()
+    if line == Ua:
+        print('wow')
+    else:
+        print('do')
+    users.close()
 
 #Ask The User if they Have an Account
 log = input('Do You Have an Account ').title()
