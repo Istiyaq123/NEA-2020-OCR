@@ -18,6 +18,9 @@ def login():
     Ua = (usernameone + '\t' + usernameonepassword)
     users.close()
 
+def roll():
+    print("start Game")
+
 #Ask The User if they Have an Account
 log = input('Do You Have an Account ').title()
 if log == 'Yes':
@@ -31,3 +34,5 @@ elif log == 'N':
 else:
     print('Program Has Crashed, Please Try Again')
     quit()
+
+roll()
