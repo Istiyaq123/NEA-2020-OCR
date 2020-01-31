@@ -16,11 +16,6 @@ def login():
     usernameone = input('What is your name')
     usernameonepassword = input('What is your password')
     Ua = (usernameone + '\t' + usernameonepassword)
-    line = users.readline()
-    if line == Ua:
-        print('wow')
-    else:
-        print('do')
     users.close()
 
 #Ask The User if they Have an Account
