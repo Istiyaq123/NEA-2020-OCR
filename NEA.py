@@ -19,7 +19,7 @@ def login():
     users.close()
 
 def roll():
-    print("Rules\nEveryone has two rolls\nIf you roll a 6, you roll again\tIf your roll a odd number 5 points are taken, if a even number is rolled, 10 points are added")
+    print("Rules\nEveryone has two rolls\nIf you roll a 6, you roll again\nIf your roll a odd number 5 points are taken, if a even number is rolled, 10 points are added")
 
 #Ask The User if they Have an Account
 log = input('Do You Have an Account ').title()
